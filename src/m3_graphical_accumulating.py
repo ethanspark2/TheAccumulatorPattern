@@ -109,6 +109,15 @@ def draw_parallel_lines(n, point, length, window):
     #          ** FIRST DO A CONCRETE EXAMPLE BY HAND! **
     ####################################################################
     # ------------------------------------------------------------------
+    for _ in range (n):
+        point = rg.Point(200, 300)
+        length = 25
+        line = rg.Line(point, length)
+        return line
+        draw_parallel_lines(window)
+
+
+    window.render()
 
 
 def test_draw_lines():
@@ -154,6 +163,7 @@ def draw_lines(n, point, window):
               from  (pY - 100)  to  (pY + 100),
               where pY is the y-coordinate of the given rg.Point.
       Must  ** render **     but   ** NOT close **   the window.
+
 
     Type hints:
       :type n: int
