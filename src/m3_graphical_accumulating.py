@@ -196,7 +196,7 @@ def draw_lines(n, point, window):
             line= rg.Line(point, rg.Point(point.x+100, point.y+100-((k)*(200/(n-1)))))
             line.attach_to(window)
 
-        window.render(1)
+    window.render(1)
 
 # ----------------------------------------------------------------------
 # Calls  main  to start the ball rolling.
